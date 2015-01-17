@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="TripleApp">
+<head>
+    <meta name="keywords" content="Triple, Triple your trip, Your trip manager" />
+    <meta name="description" content="Triple - Your trip manager" />
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Triple</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/toaster/toaster.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/paper/bootstrap.min.css" rel="stylesheet" />
+    <link href="contentbuild/css/styles.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+    <div id="page">
+        <header class="container" data-ng-controller="navigationController">
+            <div id="menu" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button class="btn btn-success navbar-toggle" data-ng-click="navbarExpanded = !navbarExpanded">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <div id="logo">
+                        <a href='#/'><img src="content/images/triple_text.png" height="65" alt="" /></a>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse" data-collapse="!navbarExpanded">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li data-ng-class="{'active':isActive('/explore')}"><a href="#/explore"><span class="glyphicon glyphicon-globe"></span> My Trip</a></li>
+                        <li data-ng-class="{'active':isActive('/places')}"><a href="#/places"><span class="glyphicon glyphicon-time"></span> My Schedule</a></li>
+                        <li data-ng-class="{'active':isActive('/about')}"><a href="#/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section id="body" class="container">
+            <div data-ng-view=""></div>
+        </section>
+        <hr />
+        <footer class="container">
+            <div align="center">
+                &nbsp;
+                <a href="#/about"><img src="content/images/triple_100x100.png" alt="Single"></a>
+                &nbsp;
+                <a href="#/about"><img src="content/images/triple_200x200.png" alt="Double"></a>
+                &nbsp;
+                <a href="#/about"><img src="content/images/triple_300x300.png" alt="Triple"></a>
+            </div>
+        </footer>
+    </div>
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/toaster/toaster.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js"></script>
+    <!-- endbower -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="appbuild/ngscripts.min.js"></script>
+</body>
+</html>

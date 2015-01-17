@@ -1,0 +1,9 @@
+app\
+bower_components\*\*.*zip
+bower_components\*.*zip
+content\
+*.wpp.targets
+gulpfile.js
+package.json
+packages.config
+publish.ignore

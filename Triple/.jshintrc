@@ -1,0 +1,4 @@
+﻿globals: {
+    L: true,
+    angular: true
+}
