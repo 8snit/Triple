@@ -291,14 +291,16 @@
     <Content Include="bower_components\leaflet\Jakefile.js" />
     <Content Include="bower_components\Leaflet.MakiMarkers\toaster\toaster.css" />
     <Content Include="bower_components\Leaflet.MakiMarkers\toaster\toaster.js" />
+    <Content Include="bower_components\toaster\toaster.css" />
+    <Content Include="bower_components\toaster\toaster.js" />
     <Content Include="contentbuild\css\styles.min.css" />
     <Content Include="content\css\paper-bootstrap-theme.min.css" />
     <Content Include="content\css\site.css" />
     <Content Include="content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="content\images\triple_100x100.png" />
-    <Content Include="content\images\triple_200x200.png" />
-    <Content Include="content\images\triple_text.png" />
-    <Content Include="content\images\triple_300x300.png" />
+    <Content Include="images\triple_100x100.png" />
+    <Content Include="images\triple_200x200.png" />
+    <Content Include="images\triple_text.png" />
+    <Content Include="images\triple_300x300.png" />
     <Content Include="content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="content\fonts\glyphicons-halflings-regular.woff" />
@@ -405,6 +407,11 @@
     <Content Include="bower_components\Leaflet.MakiMarkers\bower.json" />
     <Content Include="bower_components\Leaflet.MakiMarkers\LICENSE" />
     <Content Include="bower_components\Leaflet.MakiMarkers\README.md" />
+    <Content Include="bower_components\toaster\.bower.json" />
+    <Content Include="bower_components\toaster\bower.json" />
+    <Content Include="bower_components\toaster\LICENSE" />
+    <Content Include="bower_components\toaster\README.md" />
+    <Content Include="bower_components\toaster\toaster.scss" />
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
