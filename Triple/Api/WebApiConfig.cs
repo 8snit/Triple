@@ -4,6 +4,7 @@ using System.Composition.Hosting;
 using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.OData.Builder;
 using System.Web.OData.Extensions;
 using System.Web.OData.Routing;
@@ -17,6 +18,8 @@ namespace Triple.Api
     {
         public static void Register(HttpConfiguration httpConfiguration, CompositionHost compositionHost)
         {
+            httpConfiguration.EnableCors(new EnableCorsAttribute("*", "*", "*"));
+
             httpConfiguration.Formatters.Add(
                 new GeoJsonFormatter(new QueryStringMapping("format", "geojson", "application/vnd.geo+json")));
 

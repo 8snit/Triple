@@ -28,8 +28,6 @@ namespace Triple.Api
                 DateTimeOffset.Now.ToString(CultureInfo.InvariantCulture);
             ConfigurationManager.AppSettings["triple.appdir"] = HostingEnvironment.ApplicationPhysicalPath;
 
-            var logDirectory = AppSettings.LogDirectory;
-
             var logLevel = ConfigurationManager.AppSettings["triple.loglevel"];
             if (string.IsNullOrEmpty(logLevel))
             {
@@ -58,8 +56,9 @@ namespace Triple.Api
             }
 
             Log.Logger = loggerConfiguration
-                .WriteTo.RollingFile(logDirectory + "triple-{Date}.log",
-                    outputTemplate: "{Timestamp} [{Level}] {Message:l}{NewLine:l}{Exception:l}")
+                .WriteTo.Trace()
+                //.WriteTo.RollingFile(logDirectory + "triple-{Date}.log",
+                //    outputTemplate: "{Timestamp} [{Level}] {Message:l}{NewLine:l}{Exception:l}")
                 .CreateLogger();
 
             Log.Information("starting version {Version}", ConfigurationManager.AppSettings["triple.version"]);

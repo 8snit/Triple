@@ -129,6 +129,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.2\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -138,6 +141,9 @@
     <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.2\lib\net45\System.Web.Http.Cors.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http.Owin, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -170,8 +176,6 @@
     <Compile Include="Api\Spatial\GeometryConvert.cs" />
     <Compile Include="Api\Spatial\GeoJsonDbGeometryConverter.cs" />
     <Compile Include="Api\Spatial\GeometryWrapper.cs" />
-    <Compile Include="Api\AppSettings.cs" />
-    <Compile Include="Api\AppSettingsException.cs" />
     <Compile Include="Api\CompositeKeyRoutingConvention.cs" />
     <Compile Include="Api\Controller\ActivitiesController.cs" />
     <Compile Include="Api\Controller\AttachmentsController.cs" />
@@ -416,9 +420,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="ls.pubignore.wpp.targets" />
-    <None Include="Properties\PublishProfiles\achtsnit - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\explore4sq - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\explore4sq - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\achtsnit.pubxml" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
   </ItemGroup>
   <PropertyGroup>

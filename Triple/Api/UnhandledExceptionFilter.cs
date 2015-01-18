@@ -18,15 +18,6 @@ namespace Triple.Api
                 return;
             }
 
-            var appSettingsException = context.Exception as AppSettingsException;
-            if (appSettingsException != null)
-            {
-                Log.Error(appSettingsException, "::AppSettingsException");
-                context.Response = context.Request.CreateErrorResponse(HttpStatusCode.InternalServerError,
-                    "Invalid configuration, please contact the system administrator!", appSettingsException);
-                return;
-            }
-
             Log.Error(context.Exception, "Unhandled Exception");
             context.Response = context.Request.CreateErrorResponse(HttpStatusCode.InternalServerError,
                 "An error occured, please try again!", context.Exception);
