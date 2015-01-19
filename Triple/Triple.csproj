@@ -354,6 +354,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
@@ -456,8 +457,6 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="ls.pubignore.wpp.targets" />
-    <None Include="Properties\PublishProfiles\achtsnit.pubxml" />
-    <None Include="Properties\PublishProfiles\local.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
