@@ -324,15 +324,8 @@
     <Content Include="bower_components\leaflet\dist\leaflet.css" />
     <Content Include="bower_components\leaflet\dist\leaflet.js" />
     <Content Include="bower_components\leaflet\Jakefile.js" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\toaster.css" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\toaster.js" />
-    <Content Include="bower_components\toaster\.bower.json" />
-    <Content Include="bower_components\toaster\bower.json" />
-    <Content Include="bower_components\toaster\LICENSE" />
-    <Content Include="bower_components\toaster\README.md" />
     <Content Include="bower_components\toaster\toaster.css" />
     <Content Include="bower_components\toaster\toaster.js" />
-    <Content Include="bower_components\toaster\toaster.scss" />
     <Content Include="contentbuild\css\styles.min.css" />
     <Content Include="content\css\paper-bootstrap-theme.min.css" />
     <Content Include="content\css\site.css" />
@@ -354,10 +347,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ApplicationInsights.config" />
     <Content Include="bower_components\angular-animate\.bower.json" />
     <Content Include="bower_components\angular-animate\angular-animate.min.js.map" />
     <Content Include="bower_components\angular-animate\bower.json" />
@@ -431,6 +427,10 @@
     <Content Include="bower_components\font-awesome\scss\_spinning.scss" />
     <Content Include="bower_components\font-awesome\scss\_stacked.scss" />
     <Content Include="bower_components\font-awesome\scss\_variables.scss" />
+    <Content Include="bower_components\Leaflet.MakiMarkers\.bower.json" />
+    <Content Include="bower_components\Leaflet.MakiMarkers\bower.json" />
+    <Content Include="bower_components\Leaflet.MakiMarkers\LICENSE" />
+    <Content Include="bower_components\Leaflet.MakiMarkers\README.md" />
     <Content Include="bower_components\leaflet\.bower.json" />
     <Content Include="bower_components\leaflet\bower.json" />
     <Content Include="bower_components\leaflet\CHANGELOG.md" />
@@ -440,23 +440,17 @@
     <Content Include="bower_components\leaflet\package.json" />
     <Content Include="bower_components\leaflet\PLUGIN-GUIDE.md" />
     <Content Include="bower_components\leaflet\README.md" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\.bower.json" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\bower.json" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\LICENSE" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\README.md" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\toaster\toaster.scss" />
-    <Content Include="packages.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="bower_components\Leaflet.MakiMarkers\.bower.json" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\bower.json" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\LICENSE" />
-    <Content Include="bower_components\Leaflet.MakiMarkers\README.md" />
-    <Content Include="ApplicationInsights.config" />
+    <Content Include="bower_components\toaster\.bower.json" />
+    <Content Include="bower_components\toaster\bower.json" />
+    <Content Include="bower_components\toaster\LICENSE" />
+    <Content Include="bower_components\toaster\README.md" />
+    <Content Include="bower_components\toaster\toaster.scss" />
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
     <Content Include="ls.pubignore.wpp.targets" />
+    <None Include="Properties\PublishProfiles\achtsnit.pubxml" />
+    <None Include="Properties\PublishProfiles\achtsnit_local.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
